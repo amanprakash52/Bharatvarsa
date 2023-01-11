@@ -1,0 +1,324 @@
+/* CSS reset */
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* utility classes */
+.text-primary{
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 3.125rem;
+    padding: 1.125rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.text-secondary{
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.563rem;
+    padding: 0.313rem; 
+}
+
+
+.text-para{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.938rem;
+    padding: 0.938rem;
+    font-weight: bold;
+}
+
+.center{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.btn{
+    outline: none;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 0.625rem 1.25rem;
+    border-radius: 1.438rem;
+    cursor: pointer;
+    margin: 1.25rem auto;
+    width: 100%;
+    transition: background-color 0.5s ease 0s;   
+}
+
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+
+i{
+    display: inline-block;
+}
+
+.empty{
+    height: 3.75rem;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+}
+
+
+/* header */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.625rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+/* adding background of black with opacity */
+header::before{
+    content: ""; 
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;  
+}
+
+/* header + footer: logo and name */
+.logo img{
+    height: 3.125rem;
+    padding: 0px 0.938rem 0px 1.25rem; 
+}
+
+.logo h3{
+    padding-top: 0.813rem; 
+    font-family: 'Lato', sans-serif;
+}
+
+/* header menu styling */
+header ul{
+    display: flex; 
+}
+
+header #menu{
+    padding-top: 0.625rem;
+}
+header .menu-item {
+    list-style: none;
+}
+
+header .menu-item a{
+    text-decoration: none;
+    margin-right: 1.563rem;
+    font-size: 1.063rem;
+    font-weight: bolder;
+    font-family:  'Lato', sans-serif;
+}
+header .menu-item a:hover{
+   color: rgb(255, 166, 0);
+}
+
+
+
+/* home */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem;
+    height: 28.125rem;
+}
+
+/* adding background-image for home section */
+#home::before{
+    content: ""; 
+    background-image: url('../img/26.jpg');
+    background-attachment: fixed;
+    background-size: cover;   
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9; 
+}
+
+
+/* services and spots */
+#service-menu,
+#spot-menu{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+/* service and spot section items' styling */
+.service-item{
+    height: 27.6rem
+}
+
+.service-item,
+.spot-item{
+    border: 2px solid white;
+    width: 18.75rem;
+    margin: 0.625rem;
+    transition: all 0.2s ease-in-out 0s;
+    cursor:pointer
+}
+
+.service-item:hover,
+.spot-item:hover{
+    transform: scale(1.06);
+    background-color: rgb(41, 39, 39);
+
+}
+
+.service-item img,
+.spot-item img{
+    height: 8.75rem;
+    padding: 0.438rem;
+}
+
+#spots{
+    margin-bottom: 1.875rem;
+    padding-top: 3.125rem;    
+}
+
+
+/* quote */
+#quote img{
+   width: 98vw;
+   margin: 1.875rem 0 0px 0.375rem;    
+}
+
+
+/* registration */
+#registration{
+    height: 33.7rem;
+}
+
+/* adding background-image for registration section */
+#registration::before{
+    background: url('../img/bg-registration.jpg') no-repeat center center/cover;
+    opacity: 0.7; 
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+
+}
+
+/* styling registration form */
+#reg-form{
+    display: inline-block;
+    border: 3px solid white;
+    position: relative;
+    top: 1.25rem;
+    left: 55%;
+    padding: 1.563rem 2.5rem;
+    border-radius: 1.875rem;
+}
+
+/* adding background of .5 opacity */
+#reg-form::before{
+    content: "";
+    background-color: #f55501;
+    position: absolute;
+    width: 100%;
+    height:100%;
+    top:0;
+    left: 0;
+    border-radius: 1.875rem;
+    z-index: -1;
+    opacity: 0.5;
+
+}
+
+#reg-form .form-group{
+    display: block;
+    margin:auto;
+    border-bottom: 2px solid white;
+}
+
+
+#reg-form input{   
+    background-color: transparent;
+    border: none; 
+    outline: none;  
+}
+
+#reg-form .radiobtn{
+    display: inline;
+    width: 1.875rem;
+    font-family: 'Poppins', sans-serif;
+}
+::placeholder { 
+    color: whitesmoke;
+  }
+#reg-form h6{
+    display: inline;
+    padding: 0px;
+
+}
+#reg-form .gender{
+    margin-top: 1.25rem;
+}
+
+
+/* footer */
+#footer{
+    display: flex;
+    padding: 1.25rem;
+    background-color: #0c151f;
+}
+
+.footer-item{
+    margin: 0px 0.438rem;
+}
+
+#about{
+    width: 34.375rem;
+    text-align: center;
+}
+
+#about .logo{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+/* contact us section*/
+#contact{
+    width: 22.5rem ;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-item{
+    display: inline-block;
+}
+
+.contact-item p{
+    display: inline-block;
+}
+
+
+#contact h2{
+   padding-bottom: 1.875rem;
+}
+
+/* copyright section*/
+#copyright{
+    align-self: center;
+}
