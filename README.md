@@ -1,5 +1,4 @@
 # Bhāratavarṣa
-> [Link-to-Bhāratavarṣa](https://hamnarauf.github.io/Tourist-Bug/)
 - Responsive static webpage for a tourist company.
 
 ## Front-end
