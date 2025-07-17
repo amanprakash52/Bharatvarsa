@@ -1,6 +1,6 @@
-# 🇮🇳 Next Bharatvarsa - Tourist Information Website
+# 🇮🇳 Bharatvarsa - Tourist Information Website
 
-**Next Bharatvarsa** is a beautiful, informative, and responsive tourism website showcasing the incredible diversity and cultural heritage of India. From the snow-capped Himalayas to the backwaters of Kerala, this site is designed to help travelers discover key destinations, festivals, foods, and more.
+** Bharatvarsa** is a beautiful, informative, and responsive tourism website showcasing the incredible diversity and cultural heritage of India. From the snow-capped Himalayas to the backwaters of Kerala, this site is designed to help travelers discover key destinations, festivals, foods, and more.
 
 ---
 
